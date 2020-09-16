@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:reflex-io-board-cache
 EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
@@ -1413,17 +1414,6 @@ Wire Wire Line
 	3850 5150 3900 5150
 Connection ~ 3900 5150
 $Comp
-L Interface_UART:SP3485EN U8
-U 1 1 5FCA13F1
-P 4750 7100
-F 0 "U8" H 4850 6700 50  0000 C CNN
-F 1 "SP3485EN" H 4450 6700 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5800 6750 50  0001 C CIN
-F 3 "http://www.icbase.com/pdf/SPX/SPX00480106.pdf" H 4750 7100 50  0001 C CNN
-	1    4750 7100
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R34
 U 1 1 5FCA13F7
 P 5300 7100
@@ -2240,8 +2230,6 @@ Wire Wire Line
 Connection ~ 7700 6500
 Wire Wire Line
 	8250 6500 8950 6500
-Wire Wire Line
-	8950 6500 8950 6950
 Connection ~ 8250 6500
 Wire Wire Line
 	8950 7250 8950 7700
@@ -2533,19 +2521,6 @@ Wire Wire Line
 	6950 9950 6650 9950
 Wire Wire Line
 	6950 9750 6800 9750
-$Comp
-L power:GND #PWR039
-U 1 1 60151260
-P 6800 9500
-F 0 "#PWR039" H 6800 9250 50  0001 C CNN
-F 1 "GND" H 6805 9327 50  0000 C CNN
-F 2 "" H 6800 9500 50  0001 C CNN
-F 3 "" H 6800 9500 50  0001 C CNN
-	1    6800 9500
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	6800 9500 6800 9550
 Connection ~ 6800 9550
 Wire Wire Line
 	1450 8800 1650 8800
@@ -2670,9 +2645,9 @@ Text GLabel 1450 10450 2    50   Input ~ 0
 USART3_TX+
 Text GLabel 1450 10150 2    50   Input ~ 0
 USART3_TX-
-Text GLabel 1450 10350 2    50   Input ~ 0
-USART3_CK+
 Text GLabel 1450 10250 2    50   Input ~ 0
+USART3_CK+
+Text GLabel 1450 10350 2    50   Input ~ 0
 USART3_CK-
 $Comp
 L Switch:SW_Push SW2
@@ -3588,4 +3563,45 @@ Wire Wire Line
 Wire Wire Line
 	5300 10000 5300 9900
 Connection ~ 5050 10000
+$Comp
+L power:GNDD #PWR0101
+U 1 1 5F6D34EF
+P 6800 9800
+F 0 "#PWR0101" H 6800 9550 50  0001 C CNN
+F 1 "GNDD" H 6950 9800 50  0000 C CNN
+F 2 "" H 6800 9800 50  0001 C CNN
+F 3 "" H 6800 9800 50  0001 C CNN
+	1    6800 9800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 9800 6800 9750
+Connection ~ 6800 9750
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 5F72EE4C
+P 7250 9450
+F 0 "#FLG0103" H 7250 9525 50  0001 C CNN
+F 1 "PWR_FLAG" H 7250 9623 50  0000 C CNN
+F 2 "" H 7250 9450 50  0001 C CNN
+F 3 "~" H 7250 9450 50  0001 C CNN
+	1    7250 9450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 9550 7250 9450
+Connection ~ 7250 9550
+Wire Wire Line
+	8950 6500 8950 6950
+$Comp
+L Interface_UART:SP3485EN U8
+U 1 1 5FCA13F1
+P 4750 7100
+F 0 "U8" H 4850 6700 50  0000 C CNN
+F 1 "SP3485EN" H 4450 6700 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5800 6750 50  0001 C CIN
+F 3 "http://www.icbase.com/pdf/SPX/SPX00480106.pdf" H 4750 7100 50  0001 C CNN
+	1    4750 7100
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
