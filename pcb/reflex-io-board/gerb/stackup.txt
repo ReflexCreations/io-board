@@ -1,4 +1,0 @@
-1. reflex-io-board-F_Cu.gbr
-2. reflex-io-board-In1_Cu.gbr
-3. reflex-io-board-In2_Cu.gbr
-4. reflex-io-board-B_Cu.gbr
