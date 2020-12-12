@@ -55,6 +55,7 @@ Board: The JLCPCB assembled route
 - More methods of panel addressing. Currently the RJ45 method is the only way. So any future panel boards would have to conform to that specification. Some people may just want a much easier method of addressing digital sensors or force sensitive resistors. This could be supported on the I/O board to reduce requirements for travel pads and the likes.
 - Easier debugging. The status LEDs are ambiguous as to what they do. More status LEDs, more text indication on the board (e.g. 'Left Panel Unconnected' next to a status LED) could make things a lot easier for the end user.
 - Future form factor updates. People might want to use these boards in an arcade pad. They may want to avoid the aluminium extrusion framework. Fitting this board for all sorts of different requirements will improve accessibility to the electronics.
+- These boards could have through hole parts populated by a batch manufacturer, and be sold without the need for soldering. If you'd like to sell these boards, please get in touch, and we can help you source finished boards.
 
 ## Firmware
 
