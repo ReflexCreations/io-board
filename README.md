@@ -1,6 +1,6 @@
 # RE:Flex Dance I/O v2 PCB Design 
 
-This repository contains source documents and manufacturing files for the RE:Flex Dance Pad's I/O Board. It was created using [KiCAD 5.1.4](https://kicad-pcb.org/).
+This repository contains source documents and manufacturing files for the RE:Flex Dance Pad's I/O Board. It was created using [KiCAD 5.1.4](https://kicad.org/).
 
 The I/O Boards purpose is to provide an interface between a computer (using USB 2.0) and 4 'panel boards' (using RJ45) to:
 - Receive panel board pressure sensor data, organize the data and send it to computer programs
